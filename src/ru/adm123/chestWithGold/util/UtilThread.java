@@ -20,6 +20,8 @@ public class UtilThread {
         try {
             semaphore.acquire();
         } catch (InterruptedException ignored) {
+            semaphore.release();
+            throw new RuntimeException();
         }
     }
 
