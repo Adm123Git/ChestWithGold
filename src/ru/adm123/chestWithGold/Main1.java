@@ -1,16 +1,19 @@
 package ru.adm123.chestWithGold;
 
 import ru.adm123.chestWithGold.model.Chest;
+import ru.adm123.chestWithGold.model.ChestSynchronized;
 import ru.adm123.chestWithGold.model.Player;
 
 /**
  * @author Dmitry Ushakov on 15.09.21
+ * <p>
+ * Демо синхронизации с помощью synchronized-метода
  */
-public class Main {
+public class Main1 {
 
     public static void main(String[] args) throws InterruptedException {
 
-        Chest chest = new Chest(100);
+        Chest chest = new ChestSynchronized(100);
         Player player1 = new Player("Player1");
         Player player2 = new Player("Player2");
         Player player3 = new Player("Player3");
