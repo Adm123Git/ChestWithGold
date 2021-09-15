@@ -7,7 +7,7 @@ import java.util.concurrent.Semaphore;
 /**
  * @author Dmitry Ushakov on 15.09.21
  */
-public class UtilThread {
+public abstract class UtilThread {
 
     public static void threadSleep(int timeout) {
         try {
